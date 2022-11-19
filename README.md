@@ -54,10 +54,6 @@ currently_learning:
 hobbies: ["Manga", "Anime", "3D Printing"]
 ```
 
-<h2 align="center">You can reach me at <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h2>
-
-[![linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashpawara) [![medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@_akashpawara_)  [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/akash_pawara_/) [![whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=917506021898) [![telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/akashpawara) ![Twitter Follow](https://img.shields.io/twitter/follow/akash_pawara_?logo=twitter&style=for-the-badge)
-
 ## 📈 GitHub Stats
 
 [![Kabilan108's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kabilan108&count_private=true&hide=issues&show_icons=true&theme=codeSTACKr)](https://github.com/anuraghazra/github-readme-stats)
