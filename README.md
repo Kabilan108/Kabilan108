@@ -5,6 +5,8 @@
 <h1 align="center">
   < / hello >
 </h1>
+  
+[![wakatime](https://wakatime.com/badge/user/6a085912-85f1-47f5-acc7-c7f5ac1110ab.svg)](https://wakatime.com/@6a085912-85f1-47f5-acc7-c7f5ac1110ab)
 
 **⚡ Quick Bio:** An engineer with a passion for genomics and data science.
 - 👀 I’m interested in deep learning applications to spatial transcriptomics, bioimaging, and network neuroscience
