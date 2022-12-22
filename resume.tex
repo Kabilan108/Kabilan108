@@ -1,13 +1,13 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+% ========================================================================================
+%   Resume in Latex
+%   Author : Jake Gutierrez
+%   Based off of: https://github.com/sb2nov/resume
+%   License : MIT
+% ========================================================================================
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}   
+\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
@@ -25,11 +25,21 @@
 \input{glyphtounicode}
 
 
-%----------FONT OPTIONS----------
-\usepackage[sfdefault]{FiraSans}
+% ------------------------------------- FONT OPTIONS -------------------------------------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
 
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% -------------------------------------- PAGE SETUP --------------------------------------
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}  % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -55,8 +65,8 @@
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
+
+% ------------------------------------ CUSTOM COMMANDS -----------------------------------
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -108,16 +118,21 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\reusmeSubHeadingListSmallStart}{\begin{itemize}[itemsep=-4pt, parsep=4pt]}
+\newcommand{\resumeSubHeadingListSmallEnd}{\end{itemize}}
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% ========================================================================================
+%                                   RESUME STARTS HERE
+% ----------------------------------------------------------------------------------------
 
 \begin{document}
 
-%----------HEADING----------
+% --------------------------------------- HEADING ----------------------------------------
 
 \begin{center}
     {\LARGE \scshape Tony Kabilan Okeke} \\  
@@ -133,163 +148,203 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
+% -------------------------------------- EDUCATION ---------------------------------------
+
 \section{Education}
 \resumeSubHeadingListStart
     \resumeSubheadingRow
-        {Drexel University} {Philadelphia, Pennsylvania}
-        {Master/Bachelor of Science in Biomedical Engineering} {Anticipated Graduation: June 2024}
-        {Concentrations: Bioinformatics \& Neuroengineering} {Cummulative GPA: 4.00}
+        {Drexel University}
+        {Philadelphia, Pennsylvania}
+        {Master/Bachelor of Science in Biomedical Engineering}
+        {Anticipated Graduation: June 2024}
+        {Concentrations: Bioinformatics \& Neuroengineering} 
+        {Cummulative GPA: 4.00}
         {Minor: Computer Science}
 \resumeSubHeadingListEnd
-  
 
-%-----------EXPERIENCE-----------
+
+% -------------------------------------- EXPERIENCE --------------------------------------
+
 \section{Experience}
 \resumeSubHeadingListStart
 
-    \resumeSubheading
-        {IVIVT - Non-Clinical Safety - Global Investigative Safety, GSK} {April 2022 -- September 2022}
-        {Scientific Student Worker} {Collegeville, Pennsylvania}
-        \resumeItemListStart
-            \resumeItem{
-                Utilized the \textit{Dash} and \textit{Flask} libraries in python to develop an interactive web application for performing statistical analysis on data generated in high-content imaging toxicology studies. Also utilized \textit{Dask} to parallelize computations on larger data sets to improve efficiency. The web application was then deployed via \textit{RStudio Connect} on the internal HPC.
-            }
-            \resumeItem{
-                Implemented the \textit{Noise2Void} deep neural network on HPC to perform noise reduction in microscopy images in order to improve the accuracy of an image segmentation and feature extraction pipeline.
-            }
-            \resumeItem{
-                Developed a python package with tools for performing statistical analysis, visualization, and machine learning on high-content imaging data sets.
-            }
-            \resumeItem{
-                Implemented pipelines in \textit{CellProfiler} and \textit{Columbus} to perform feature extraction for high-content images generated via cell painting assays.
-            }
-            \resumeItem{
-                Utilized \textit{Scikit-learn} to implement decision tree, random forest, and support vector machine models for biomarker discovery on high-content imaging datasets.
-            }
-        \resumeItemListEnd
+\resumeSubheading
+    {IVIVT - Non-Clinical Safety - Global Investigative Safety, GSK} 
+    {April 2022 -- September 2022}
+    {Scientific Student Worker} 
+    {Collegeville, Pennsylvania}
+
+    \resumeItemListStart
+        \resumeItem{
+            Utilized the \textit{Dash} and \textit{Flask} libraries in python to develop 
+            an interactive web application for performing statistical analysis on data 
+            generated in high-content imaging toxicology studies. Also utilized 
+            \textit{Dask} to parallelize computations on larger data sets to improve 
+            efficiency. The web application was then deployed via \textit{RStudio Connect} 
+            on the internal HPC.
+        }
+        \resumeItem{
+            Trained the \textit{Noise2Void} deep neural network on HPC to perform noise 
+            reduction in microscopy images in order to improve the accuracy of CellProfiler
+            pipelines for image segmentation and feature extraction.
+        }
+        \resumeItem{
+            Developed a python package with tools for performing statistical analysis, 
+            visualization, and machine learning on high-content imaging data sets.
+        }
+        \resumeItem{
+            Implemented pipelines in \textit{CellProfiler} and \textit{Columbus} to 
+            perform feature extraction for high-content images generated via cell painting 
+            assays.
+        }
+        \resumeItem{
+            Utilized \textit{Scikit-learn} to implement decision tree, random forest, and 
+            support vector machine models for biomarker discovery on high-content imaging 
+            datasets.
+        }
+    \resumeItemListEnd
   
-    \resumeSubheading
-        {Invenio Lab, Hospital of the University of Pennsylvania}{March 2021 -- August 2022}
-        {Immunology Research Assistant}{Philadelphia, Pennsylvania}
-        \resumeItemListStart
-            \resumeItem{
-                Utilized \emph{Scikit-learn}, \emph{Pandas} and \emph{NumPy} to apply 
-                unsupervised learning algorithms to clinical and multi-omic datasets, and 
-                presented results to colleagues using \emph{Seaborn} in \emph{Jupyter} 
-                notebooks.
-            }
-            \resumeItem{
-                Developed \emph{R} scripts for analyzing protein expression and clinical data 
-                from electronic medical records.
-            }
-            \resumeItem{
-                Performed differential methylation, KEGG pathway enrichment, and Gene Ontology 
-                analysis on microarray results for patients who underwent cardiopulmonary 
-                bypass surgeries using \emph{bash} and \emph{R} scripts.
-            }
-        \resumeItemListEnd
+\resumeSubheading
+    {Invenio Lab, Hospital of the University of Pennsylvania}
+    {March 2021 -- August 2022}
+    {Immunology Research Assistant}
+    {Philadelphia, Pennsylvania}
+
+    \resumeItemListStart
+        \resumeItem{
+            Utilized \emph{Scikit-learn}, \emph{Pandas} and \emph{NumPy} to apply 
+            unsupervised learning algorithms to clinical and multi-omic datasets, and 
+            presented results to colleagues using \emph{Seaborn} in \emph{Jupyter} 
+            notebooks.
+        }
+        \resumeItem{
+            Developed \emph{R} scripts for analyzing protein expression and clinical data 
+            from electronic medical records.
+        }
+        \resumeItem{
+            Performed differential methylation, KEGG pathway enrichment, and Gene Ontology 
+            analysis on microarray results for patients who underwent cardiopulmonary 
+            bypass surgeries using \emph{bash} and \emph{R} scripts.
+        }
+    \resumeItemListEnd
   
-    \resumeSubheading
-        {Zhou Lab, Children's Hospital of Philadelphia} {May 2020 -- June 2021}
-        {Undergraduate Research Intern} {Philadelphia, Pennsylvania}
-        \resumeItemListStart
-            \resumeItem{
-                Contributed to the development of R packages for analyzing DNA methylation 
-                levels in data from Illumina microarrays.
-            }
-            \resumeItem{
-                Validated R package performance using \emph{GEO} public datasets.
-            }
-        \resumeItemListEnd
+\resumeSubheading
+    {Zhou Lab, Children's Hospital of Philadelphia}
+    {May 2020 -- June 2021}
+    {Undergraduate Research Intern}
+    {Philadelphia, Pennsylvania}
+
+    \resumeItemListStart
+        \resumeItem{
+            Contributed to the development of R packages for analyzing DNA methylation 
+            levels in data from Illumina microarrays.
+        }
+        \resumeItem{
+            Validated R package performance using \emph{GEO} public datasets.
+        }
+    \resumeItemListEnd
     
 \resumeSubHeadingListEnd
 \vspace{-10pt}
 
-%-----------PROJECTS-----------
+
+% --------------------------------------- PROJECTS ---------------------------------------
+
 \section{Projects}
 \vspace{-5pt}
-\resumeSubHeadingListStart
 
-    % \resumeProjectHeading
-    %     {\textbf{Bicepital Groove Modelling GUI} $|$ \emph{MATLAB, AppDesigner}} {Ongoing}
-    %     \resumeItemListStart
-    %         \resumeItem{
-    %             Developing MATLAB-based GUI for analyzing ultrasound images of the bicepital 
-    %             grooves of baseball players.
-    %         }
-    %         \resumeItem{
-    %             Utilizing image segmentation to reconstruct a 3D-model of each player's 
-    %             bicepital groove.
-    %         }
-    %     \resumeItemListEnd
-    % \vspace{-16pt}
+\resumeSubHeadingListStart
         
-    \resumeProjectHeading
-        {\text{\textbf{ELISA Analysis Tool} $|$ \emph{R, Shiny}}} {September 2021}
-        \resumeItemListStart
-            \resumeItem{
-                Processed Optical Density values from microplate readers using \emph{tidyverse}
-                packages.
-            }
-            \resumeItem{
-                Developed \emph{R} script for fitting OD values for ELISA standards to a 
-                5-Parameter logistic regression model to estimate unknown sample 
-                concentrations.
-            }
-            \resumeItem{
-                Built interactive web-application for ELISA curve fitting using the \emph{RShiny} framework.
-            }
-        \resumeItemListEnd
+\resumeProjectHeading
+    {\textbf{ELISA Analysis Tool} $|$ \emph{R, Shiny}} {September 2021}
+    \resumeItemListStart
+        \resumeItem{
+            Processed Optical Density values from microplate readers using \emph{tidyverse}
+            packages.
+        }
+        \resumeItem{
+            Developed \emph{R} script for fitting OD values for ELISA standards to a 
+            5-Parameter logistic regression model to estimate unknown sample 
+            concentrations.
+        }
+        \resumeItem{
+            Built interactive web-application for ELISA curve fitting using the 
+            \emph{RShiny} framework.
+        }
+    \resumeItemListEnd
     \vspace{-16pt}
-    
+
 \resumeSubHeadingListEnd
 \vspace{2pt}
 
-%-----------PROGRAMMING SKILLS-----------
+
+% ---------------------------------------- SKILLS ----------------------------------------
+
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Programming Languages: }{Python, R, Bash, C++, MATLAB, SQL, AWK, Git, PHP} \\
-        
-        \textbf{Software: }{CellProfiler, Columbus Imaging Software, Microsoft Office, LoggerPro, Simulink, Fusion 360, Ultimaker Cura} \\
+        \textbf{Programming Languages: }{
+            Python, R, Bash, C++, MATLAB, SQL, AWK, Git, PHP
+        } \\
+        \textbf{Software: }{
+            CellProfiler, Columbus Imaging Software, Microsoft Office, LoggerPro, 
+            Simulink, Fusion 360, Ultimaker Cura
+        } \\
     }}
  \end{itemize}
  \vspace{-15pt}
-   
-%------Research Experience-------
+
+
+% ------------------------------------- PUBLICATIONS--------------------------------------
+
 \section{Publications}
-\resumeSubHeadingListStart
-\vspace{-5pt}
-    \begin{itemize}[itemsep=-4pt, parsep=4pt]
-        \item\small \emph{
-            Longitudinal urinary biomarkers of immunological activation in covid-19 patients without clinically apparent kidney disease versus acute and chronic failure.
-        } \href{https://www.nature.com/articles/s41598-021-99102-5.pdf?proof=tr} {Scientific Reports 11, 19675 (2021)}.
-        
-        \item\small \emph{
-            Unbiased Analysis of Temporal Changes in Immune Serum Markers in Acute COVID-19 Infection With Emphasis on Organ Failure, Anti-Viral Treatment, and Demographic Characteristics.
-        } \href{https://www.frontiersin.org/articles/10.3389/fimmu.2021.650465/full} {Frontiers in Immunology 12:650465 (2021)}.
-        
-    \end{itemize}
-\resumeSubHeadingListEnd
+\vspace{-3pt}
+
+\reusmeSubHeadingListSmallStart
+    \item\small {
+        \emph{
+            Longitudinal urinary biomarkers of immunological activation in COVID-19
+            patients without clinically apparent kidney disease versus acute and 
+            chronic failure.
+        } 
+        \href{https://www.nature.com/articles/s41598-021-99102-5.pdf?proof=tr} 
+        {Scientific Reports 11, 19675 (2021)}.
+    }
+    
+    \item\small {
+        \emph{
+            Unbiased Analysis of Temporal Changes in Immune Serum Markers in Acute 
+            COVID-19 Infection With Emphasis on Organ Failure, Anti-Viral Treatment, 
+            and Demographic Characteristics.
+        } 
+        \href{https://www.frontiersin.org/articles/10.3389/fimmu.2021.650465/full} 
+        {Frontiers in Immunology 12:650465 (2021)}.
+    }
+\resumeSubHeadingListSmallEnd
+
 \vspace{-20pt}
 
-%-----------INVOLVEMENT---------------
+
+% ------------------------------------- PUBLICATIONS--------------------------------------
+
 \section{Activities}
-\resumeSubHeadingListStart
-    \vspace{-5pt}
-    \begin{itemize}[itemsep=-4pt, parsep=4pt]
-    
-        \item\small {
-            Vice President, \emph{Drexel Computational Design}, March 2021 -- Present
-        }
-        \item\small {
-            Member, \emph{Tau Beta Pi}, December 2021 -- Present
-        }
-        \item\small {
-            Member, \emph{Drexel Society of Artificial Intelligence}, September 2022 -- Present
-        }
-    \end{itemize}
-\resumeSubHeadingListEnd
-    
+
+\reusmeSubHeadingListSmallStart
+\vspace{-3pt}    
+    \item\small {
+        Vice President, \emph{Drexel Computational Design}, March 2021 -- Present
+    }
+    \item\small {
+        Member, \emph{Tau Beta Pi}, December 2021 -- Present
+    }
+    \item\small {
+        Member, \emph{Drexel Society of Artificial Intelligence}, September 2022 -- Present
+    }
+\resumeSubHeadingListSmallEnd
+
+
 \end{document}
+
+% ----------------------------------------------------------------------------------------
+%                                    RESUME ENDS HERE
+% ========================================================================================
