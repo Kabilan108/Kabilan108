@@ -4,7 +4,12 @@ on:
       - main
 
 jobs:
-  print_hello:
+  add_pub:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!"
+
+      - name: Print environment
+        uses: segeysova/jq-action@v2
+        id: version
+        with:
+          cmd: 'jq -n env'
