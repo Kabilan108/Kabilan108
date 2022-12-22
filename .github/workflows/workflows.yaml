@@ -9,7 +9,7 @@ jobs:
     steps:
 
       - name: Print environment
-        uses: segeysova/jq-action@v2
+        uses: sergeysova/jq-action@v2
         id: version
         with:
           cmd: 'jq -n env'
