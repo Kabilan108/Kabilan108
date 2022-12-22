@@ -7,7 +7,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
+\usepackage{latexsym}   
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
@@ -26,16 +26,7 @@
 
 
 %----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-\usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
+\usepackage[sfdefault]{FiraSans}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -129,118 +120,176 @@
 %----------HEADING----------
 
 \begin{center}
-    {\LARGE \scshape Tony Kabilan Okeke} \\ \vspace{1pt}
-    3200 Chestnut Street, Apt 5008\\ Philadelphia, PA 19104 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ (646) 659-4319 ~ \href{mailto:tko35@drexel.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{tko35@drexel.edu}} ~ 
-    \href{https://linkedin.com/in//t-k-o}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/t-k-o}}
+    {\LARGE \scshape Tony Kabilan Okeke} \\  
+    \vspace{1pt}
+    Philadelphia, PA \\ 
+    \vspace{1pt}
+    \href{mailto:tko35@drexel.edu}{\faEnvelope\  tko35@drexel.edu}
+    ~~
+    \href{https://linkedin.com/in//t-k-o}{\faLinkedin\ linkedin.com/in/t-k-o}
+    ~~
+    \href{https://github.com/Kabilan108}{\faGithub\ Kabilan108}
     \vspace{-18pt}
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
     \resumeSubheadingRow
-        {Drexel University}{Philadelphia, Pennsylvania}{Master/Bachelor of Science in Biomedical Engineering}{Anticipated Graduation: June 2024}{Concentrations: Biomedical Informatics \& Neuroengineering}{Cummulative GPA: 4.00}{Minor: Computer Science}
-  \resumeSubHeadingListEnd
+        {Drexel University} {Philadelphia, Pennsylvania}
+        {Master/Bachelor of Science in Biomedical Engineering} {Anticipated Graduation: June 2024}
+        {Concentrations: Bioinformatics \& Neuroengineering} {Cummulative GPA: 4.00}
+        {Minor: Computer Science}
+\resumeSubHeadingListEnd
   
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {IVIVT - Non-Clinical Safety - Global Investigative Safety, GSK} {April 2022 -- September 2022}
+        {Scientific Student Worker} {Collegeville, Pennsylvania}
+        \resumeItemListStart
+            \resumeItem{
+                Utilized the \textit{Dash} and \textit{Flask} libraries in python to develop an interactive web application for performing statistical analysis on data generated in high-content imaging toxicology studies. Also utilized \textit{Dask} to parallelize computations on larger data sets to improve efficiency. The web application was then deployed via \textit{RStudio Connect} on the internal HPC.
+            }
+            \resumeItem{
+                Implemented the \textit{Noise2Void} deep neural network on HPC to perform noise reduction in microscopy images in order to improve the accuracy of an image segmentation and feature extraction pipeline.
+            }
+            \resumeItem{
+                Developed a python package with tools for performing statistical analysis, visualization, and machine learning on high-content imaging data sets.
+            }
+            \resumeItem{
+                Implemented pipelines in \textit{CellProfiler} and \textit{Columbus} to perform feature extraction for high-content images generated via cell painting assays.
+            }
+            \resumeItem{
+                Utilized \textit{Scikit-learn} to implement decision tree, random forest, and support vector machine models for biomarker discovery on high-content imaging datasets.
+            }
+        \resumeItemListEnd
   
     \resumeSubheading
-      {Invenio Lab, Hospital of the University of Pennsylvania}{March 2021 -- Present}
-      {Immunology Research Assistant}{Philadelphia, Pennsylvania}
-      \resumeItemListStart
-        \resumeItem{Developed SOPs and conducted assays for the isolation and extraction of DNA, RNA, and protein from human blood and urine samples, as well as the preparation of Next-Generation Sequencing Libraries for Reduced Representation Bisulfite Sequencing.}
-        \resumeItem{Utilized \emph{Scikit-learn}, \emph{Pandas} and \emph{NumPy} to apply unsupervised learning algorithms to clinical and multi-omic datasets, and presented results to colleagues using \emph{Seaborn} in \emph{Jupyter} notebooks.}
-        \resumeItem{Developed \emph{R} scripts for analyzing protein expression and clinical data from electronic medical records.}
-        \resumeItem{Performed differential methylation, KEGG pathway enrichment, and Gene Ontology analysis on microarray results for patients who underwent cardiopulmonary bypass surgeries using \emph{bash} and \emph{R} scripts.}
-      \resumeItemListEnd
+        {Invenio Lab, Hospital of the University of Pennsylvania}{March 2021 -- August 2022}
+        {Immunology Research Assistant}{Philadelphia, Pennsylvania}
+        \resumeItemListStart
+            \resumeItem{
+                Utilized \emph{Scikit-learn}, \emph{Pandas} and \emph{NumPy} to apply 
+                unsupervised learning algorithms to clinical and multi-omic datasets, and 
+                presented results to colleagues using \emph{Seaborn} in \emph{Jupyter} 
+                notebooks.
+            }
+            \resumeItem{
+                Developed \emph{R} scripts for analyzing protein expression and clinical data 
+                from electronic medical records.
+            }
+            \resumeItem{
+                Performed differential methylation, KEGG pathway enrichment, and Gene Ontology 
+                analysis on microarray results for patients who underwent cardiopulmonary 
+                bypass surgeries using \emph{bash} and \emph{R} scripts.
+            }
+        \resumeItemListEnd
   
     \resumeSubheading
-      {Zhou Lab, Children's Hospital of Philadelphia}{May 2020 -- June 2021}
-      {Undergraduate Research Intern}{Philadelphia, Pennsylvania}
-      \resumeItemListStart
-        \resumeItem{Contributed to the development of R packages for analyzing DNA methylation levels in data from Illumina microarrays.}
-        \resumeItem{Validated R package performance using \emph{GEO} public datasets.}
-      \resumeItemListEnd
+        {Zhou Lab, Children's Hospital of Philadelphia} {May 2020 -- June 2021}
+        {Undergraduate Research Intern} {Philadelphia, Pennsylvania}
+        \resumeItemListStart
+            \resumeItem{
+                Contributed to the development of R packages for analyzing DNA methylation 
+                levels in data from Illumina microarrays.
+            }
+            \resumeItem{
+                Validated R package performance using \emph{GEO} public datasets.
+            }
+        \resumeItemListEnd
     
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 \vspace{-10pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {\textbf{Bicepital Groove Modelling GUI} $|$ \emph{MATLAB, AppDesigner}}{Ongoing}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+    % \resumeProjectHeading
+    %     {\textbf{Bicepital Groove Modelling GUI} $|$ \emph{MATLAB, AppDesigner}} {Ongoing}
+    %     \resumeItemListStart
+    %         \resumeItem{
+    %             Developing MATLAB-based GUI for analyzing ultrasound images of the bicepital 
+    %             grooves of baseball players.
+    %         }
+    %         \resumeItem{
+    %             Utilizing image segmentation to reconstruct a 3D-model of each player's 
+    %             bicepital groove.
+    %         }
+    %     \resumeItemListEnd
+    % \vspace{-16pt}
+        
+    \resumeProjectHeading
+        {\text{\textbf{ELISA Analysis Tool} $|$ \emph{R, Shiny}}} {September 2021}
         \resumeItemListStart
-            \resumeItem{Developing MATLAB-based GUI for analyzing ultrasound images of the bicepital grooves of baseball players.}
-            \resumeItem{Utilizing image segmentation to reconstruct a 3D-model of each player's bicepital groove.}
+            \resumeItem{
+                Processed Optical Density values from microplate readers using \emph{tidyverse}
+                packages.
+            }
+            \resumeItem{
+                Developed \emph{R} script for fitting OD values for ELISA standards to a 
+                5-Parameter logistic regression model to estimate unknown sample 
+                concentrations.
+            }
+            \resumeItem{
+                Built interactive web-application for ELISA curve fitting using the \emph{RShiny} framework.
+            }
         \resumeItemListEnd
-        \vspace{-16pt}
+    \vspace{-16pt}
     
-      \resumeProjectHeading
-        {\text{\textbf{Well Plate Management GUI} $|$ \emph{Python, Qt}}}{July 2021}
-        \resumeItemListStart
-            \resumeItem{Utilized the Qt framework and \emph{PyQt5} to design a GUI for generating and managing layouts for 96 and 384-well plates used for conducting DNA and ELISA assays.}
-            \resumeItem{Processed user supplied data to generate excel files containing plate layouts and sample information using \emph{pandas} and \emph{openpyxl}.}
-        \resumeItemListEnd
-        \vspace{-16pt}
-        
-      \resumeProjectHeading
-        {\text{\textbf{ELISA Analysis Tool} $|$ \emph{R, Shiny}}}{September 2021}
-        \resumeItemListStart
-            \resumeItem{Processed Optical Density values from microplate readers using \emph{tidyverse} packages.}
-            \resumeItem{Developed \emph{R} script for fitting OD values for ELISA standards to a 5-Parameter logistic regression model to estimate unknown sample concentrations.}
-            \resumeItem{Built interactive web-application for ELISA curve fitting using the \emph{RShiny} framework.}
-        \resumeItemListEnd
-        \vspace{-16pt}
-        
-      \resumeProjectHeading
-        {\text{\textbf{Portable Airborne Isolation for COVID-19 Patients} $|$ \emph{MATLAB, Simulink, Fusion 360}}}{September 2020}
-        \resumeItemListStart
-            \resumeItem{Utilized Gantt Charts to manage agile workflow for designing, building and testing the a prototype.}
-            \resumeItem{Used ODEs to model airflow through system, and evaluated model performance using \emph{MATLAB} and \emph{Simulink}.}
-            \resumeItem{Designed CAD models for system in \emph{Fusion 360} and performed verification tests on prototype.}
-        \resumeItemListEnd
-        \vspace{-1pt}
-    \resumeSubHeadingListEnd
-\vspace{-10pt}
+\resumeSubHeadingListEnd
+\vspace{2pt}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages: }{Python, R, Bash, MATLAB, SQL, AWK, PHP} \\
-     \textbf{Software \& Tools: }{Microsoft Office Suite, GitHub, LoggerPro, Simulink, Fusion 360} \\
-     \textbf{Laboratory Skills: }{qPCR, RT-PCR, Bisulfite Conversion, Genomic DNA & RNA Extraction, Electophoresis, ELISA}
+        \textbf{Programming Languages: }{Python, R, Bash, C++, MATLAB, SQL, AWK, Git, PHP} \\
+        
+        \textbf{Software: }{CellProfiler, Columbus Imaging Software, Microsoft Office, LoggerPro, Simulink, Fusion 360, Ultimaker Cura} \\
     }}
  \end{itemize}
  \vspace{-15pt}
    
 %------Research Experience-------
 \section{Publications}
-    \resumeSubHeadingListStart
-        \vspace{-5pt}
-        \begin{itemize}[itemsep=-4pt, parsep=4pt]
-            \item\small \emph{Longitudinal urinary biomarkers of immunological activation in covid-19 patients without clinically apparent kidney disease versus acute and chronic failure.} \href{https://www.nature.com/articles/s41598-021-99102-5.pdf?proof=tr}{Scientific Reports 11, 19675 (2021)}.
-            \item\small \emph{Unbiased Analysis of Temporal Changes in Immune Serum Markers in Acute COVID-19 Infection With Emphasis on Organ Failure, Anti-Viral Treatment, and Demographic Characteristics.} \href{https://www.frontiersin.org/articles/10.3389/fimmu.2021.650465/full}{Frontiers in Immunology 12:650465 (2021)}.
-        \end{itemize}
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\vspace{-5pt}
+    \begin{itemize}[itemsep=-4pt, parsep=4pt]
+        \item\small \emph{
+            Longitudinal urinary biomarkers of immunological activation in covid-19 patients without clinically apparent kidney disease versus acute and chronic failure.
+        } \href{https://www.nature.com/articles/s41598-021-99102-5.pdf?proof=tr} {Scientific Reports 11, 19675 (2021)}.
+        
+        \item\small \emph{
+            Unbiased Analysis of Temporal Changes in Immune Serum Markers in Acute COVID-19 Infection With Emphasis on Organ Failure, Anti-Viral Treatment, and Demographic Characteristics.
+        } \href{https://www.frontiersin.org/articles/10.3389/fimmu.2021.650465/full} {Frontiers in Immunology 12:650465 (2021)}.
+        
+    \end{itemize}
+\resumeSubHeadingListEnd
 \vspace{-20pt}
 
 %-----------INVOLVEMENT---------------
 \section{Activities}
-    \resumeSubHeadingListStart
-        \vspace{-5pt}
-        \begin{itemize}[itemsep=-4pt, parsep=4pt]
-            \item\small {Project Manager, \emph{Drexel Computational Design}, March 2021 - Present}
-            \item\small {Member, \emph{American Society of Mechanical Engineers}, June 2020 - Present}
-            \item\small {Member, \emph{Drexel Biomedical Engineering Undergraduate Association}, September 2019 - Present}
-        \end{itemize}
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \vspace{-5pt}
+    \begin{itemize}[itemsep=-4pt, parsep=4pt]
+    
+        \item\small {
+            Vice President, \emph{Drexel Computational Design}, March 2021 -- Present
+        }
+        \item\small {
+            Member, \emph{Tau Beta Pi}, December 2021 -- Present
+        }
+        \item\small {
+            Member, \emph{Drexel Society of Artificial Intelligence}, September 2022 -- Present
+        }
+    \end{itemize}
+\resumeSubHeadingListEnd
     
 \end{document}
