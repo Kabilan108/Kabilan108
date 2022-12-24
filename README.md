@@ -58,7 +58,7 @@ hobbies: ["Manga", "Anime", "3D Printing"]
 
 ## 📈 GitHub Stats
 
-[![Kabilan108's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kabilan108&count_private=true&hide=issues&show_icons=true&theme=codeSTACKr)](https://github.com/anuraghazra/github-readme-stats)
+[![Kabilan108's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kabilan108&count_private=true&show_icons=true&theme=codeSTACKr)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kabilan108&layout=compact&theme=codeSTACKr&hide=html)](https://github.com/anuraghazra/github-readme-stats)
 <!--   
 ## Some of My Projects
