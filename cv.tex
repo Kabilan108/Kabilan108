@@ -1,0 +1,461 @@
+% ========================================================================================
+%   Resume in Latex
+%   Author : Jake Gutierrez
+%   Based off of: https://github.com/sb2nov/resume
+%   License : MIT
+% ========================================================================================
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+% ------------------------------------- FONT OPTIONS -------------------------------------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% -------------------------------------- PAGE SETUP --------------------------------------
+\pagestyle{fancy}
+\fancyhf{}  % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+% ------------------------------------ CUSTOM COMMANDS -----------------------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingRow}[8]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+      \textit{\small#7} & \textit{\small #8} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\reusmeSubHeadingListSmallStart}{\begin{itemize}[itemsep=-4pt, parsep=4pt]}
+\newcommand{\resumeSubHeadingListSmallEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+% ========================================================================================
+%                                   RESUME STARTS HERE
+% ----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% --------------------------------------- HEADING ----------------------------------------
+
+\begin{center}
+    {\LARGE \scshape Tony Kabilan Okeke} \\
+    \vspace{1pt}
+    Philadelphia, PA \\
+    \vspace{1pt}
+    \href{mailto:tko35@drexel.edu}{\faEnvelope\  tko35@drexel.edu}
+    ~~
+    \href{https://linkedin.com/in//t-k-o}{\faLinkedin\ linkedin.com/in/t-k-o}
+    ~~
+    \href{https://github.com/Kabilan108}{\faGithub\ Kabilan108}
+    \vspace{-18pt}
+\end{center}
+
+
+% -------------------------------------- EDUCATION ---------------------------------------
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheadingRow
+{Drexel University}
+{Philadelphia, Pennsylvania}
+{Master of Science in Biomedical Engineering}
+{Anticipated Graduation: June 2024}
+{Bachelor of Science in Biomedical Engineering}
+{Cummulative GPA: 4.00}
+{Concentrations: Bioinformatics \& Neuroengineering}
+{Minor: Computer Science}
+\resumeSubHeadingListEnd
+
+
+% -------------------------------------- EXPERIENCE --------------------------------------
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{IVIVT - Non-Clinical Safety - Global Investigative Safety, GSK}
+{April 2022 -- September 2022}
+{Scientific Student Worker}
+{Collegeville, Pennsylvania}
+
+\vspace{-5pt}
+\resumeItemListStart
+\resumeItem{
+    Utilized the \textit{Dash} and \textit{Flask} libraries in python to develop
+    an interactive web application for performing statistical analysis on data
+    generated in high-content imaging toxicology studies. Also utilized
+    \textit{Dask} to parallelize computations on larger data sets to improve
+    efficiency. The web application was then deployed via \textit{RStudio Connect}
+    on the internal HPC.
+}
+\resumeItem{
+    Trained the \textit{Noise2Void} deep neural network on HPC to perform noise
+    reduction in microscopy images in order to improve the accuracy of CellProfiler
+    pipelines for image segmentation and feature extraction.
+}
+\resumeItem{
+    Developed a python package with tools for performing statistical analysis,
+    visualization, and machine learning on high-content imaging data sets.
+}
+\resumeItem{
+    Implemented pipelines in \textit{CellProfiler} and \textit{Columbus} to
+    perform feature extraction for high-content images generated via cell painting
+    assays.
+}
+\resumeItem{
+    Utilized \textit{Scikit-learn} to implement decision tree, random forest, and
+    support vector machine models for biomarker discovery on high-content imaging
+    datasets.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{Invenio Lab, Hospital of the University of Pennsylvania}
+{March 2021 -- August 2022}
+{Immunology Research Assistant}
+{Philadelphia, Pennsylvania}
+
+\vspace{-5pt}
+\resumeItemListStart
+\resumeItem{
+    Developed SOPs and conducted assays for the isolation and extraction of DNA,
+    RNA, and protein from human blood and urine samples, as well as the
+    preparation of Next-Generation Sequencing libraries for Reduced Representation
+    Bisulfite Sequencing (RRBS) and gene expression microarrays.
+}
+\resumeItem{
+    Utilized \emph{Scikit-learn}, \emph{Pandas} and \emph{NumPy} to apply
+    unsupervised learning algorithms to clinical and multi-omic datasets, and
+    presented results to colleagues using \emph{Seaborn} in \emph{Jupyter}
+    notebooks.
+}
+\resumeItem{
+    Developed python and R scripts for analyzing DNA methylation levels in data
+    from Illumina microarrays.
+}
+\resumeItem{
+    Developed \emph{R} scripts for analyzing protein expression and clinical data
+    from electronic medical records.
+}
+\resumeItem{
+    Performed differential methylation, KEGG pathway enrichment, and Gene Ontology
+    analysis on microarray results for patients who underwent cardiopulmonary
+    bypass surgeries using \emph{bash} and \emph{R} scripts.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{Zhou Lab, Children's Hospital of Philadelphia}
+{May 2020 -- June 2021}
+{Undergraduate Research Intern}
+{Philadelphia, Pennsylvania}
+
+\vspace{-5pt}
+\resumeItemListStart
+\resumeItem{
+    Contributed to the development of R packages for analyzing DNA methylation
+    levels in data from Illumina microarrays.
+}
+\resumeItem{
+    Validated R package performance using \emph{GEO} public datasets.
+}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+% --------------------------------------- PROJECTS ---------------------------------------
+
+\section{Projects}
+\vspace{-5pt}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{MLGO, Deep Learning for GO Terms} $|$ \emph{Python, TensorFlow}} {September 2022}
+\resumeItemListStart
+\resumeItem{
+    Presented a neural network model for predicting enriched Gene Ontology (GO) terms from RNA-Seq differential expression analysis (DEA) data
+}
+\resumeItem{
+    Trained an autoencoder model using log fold change (logFC) values from mouse RNA-Seq datasets curated from the Digital Expression Explorer 2 repository
+}
+\resumeItem{
+    Tuned model hyperparameters using \emph{TensorBoard} and \emph{Keras Tuner} to improve model performance
+}
+\resumeItemListEnd
+\vspace{-24pt}
+
+\resumeProjectHeading
+{\textbf{CaBiD, Cancer Biomarker Discovery Tool} $|$ \emph{Python, Flask, Qt}} {September 2022}
+\resumeItemListStart
+\resumeItem{
+    Developed a web application to investigate variations in gene expression across various cancer types
+}
+\resumeItem{
+    Preprocessed and curated datasets from GEO (Gene Expression Omnibus) and CuMiDa (Curated Microarray Database) in a SQLite database
+}
+\resumeItem{
+    Identified key differences in gene expression between healthy controls and tumoral samples across various cancer types
+}
+\resumeItemListEnd
+\vspace{-24pt}
+
+\resumeProjectHeading
+{\textbf{ELISA Analysis Tool} $|$ \emph{R, Shiny}} {September 2021}
+\resumeItemListStart
+\resumeItem{
+    Processed Optical Density values from microplate readers using \emph{tidyverse}
+    packages.
+}
+\resumeItem{
+    Developed \emph{R} script for fitting OD values for ELISA standards to a
+    5-Parameter logistic regression model to estimate unknown sample
+    concentrations.
+}
+\resumeItem{
+    Built interactive web-application for ELISA curve fitting using the
+    \emph{RShiny} framework.
+}
+\resumeItemListEnd
+\vspace{-16pt}
+
+\resumeSubHeadingListEnd
+\vspace{2pt}
+
+
+% ---------------------------------------- SKILLS ----------------------------------------
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+                \textbf{Programming: }{
+                    Python, R, Bash, C++, MATLAB, SQL, AWK, Git, PHP
+                } \\
+                \textbf{Machine Learning: }{
+                    TensorFlow, Keras, PyTorch, Scikit-learn
+                } \\
+                \textbf{Wet Lab: }{
+                    PCR, qPCR, ELISA, Western Blot, DNA/RNA/Protein Extraction,
+                    NGS Library Preparation
+                } \\
+          }
+\end{itemize}
+\vspace{-15pt}
+
+\section{Awards and Honors}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+                Philly Codefest 2023 - Collaborative Team Award
+          }
+\end{itemize}
+\vspace{-15pt}
+
+
+
+% ------------------------------------- PUBLICATIONS--------------------------------------
+
+\section{Publications}
+\vspace{-3pt}
+
+\reusmeSubHeadingListSmallStart
+\item {
+            \emph{
+                Unbiased Analysis of Temporal Changes in Immune Serum Markers in Acute
+                COVID-19 Infection With Emphasis on Organ Failure, Anti-Viral Treatment,
+                and Demographic Characteristics.
+            }\\
+            \href{https://www.frontiersin.org/articles/10.3389/fimmu.2021.650465/full}
+            {Frontiers in Immunology 12:650465 (2021)}.
+      }
+
+\item {
+            \emph{
+                Longitudinal urinary biomarkers of immunological activation in COVID-19
+                patients without clinically apparent kidney disease versus acute and
+                chronic failure.
+            }\\
+            \href{https://www.nature.com/articles/s41598-021-99102-5.pdf?proof=tr}
+            {Scientific Reports 11, 19675 (2021)}.
+      }
+
+\item {
+            \emph{
+                Dynamic Changes in Central and Peripheral Neuro-Injury vs. Neuroprotective Serum
+                Markers in COVID-19 Are Modulated by Different Types of Anti-Viral Treatments but
+                Do Not Affect the Incidence of Late and Early Strokes
+            }\\
+            \href{https://doi.org/10.3390/biomedicines9121791}
+            {Biomedicines 9, no. 12 (November 2021): 1791}.
+      }
+
+\item {
+            \emph{
+                A disturbed balance between blood complement protective factors (FH, ApoE) and
+                common pathway effectors (C5a, TCC) in acute COVID-19 and during convalesce
+            }\\
+            \href{https://doi.org/10.1038/s41598-022-17011-7}
+            {Scientific Reports 12, no. 1 (August 2022)}.
+      }
+
+\item {
+            \emph{
+                Persistent Depletion of Neuroprotective Factors Accompanies Neuroinflammatory,
+                Neurodegenerative, and Vascular Remodeling Spectra in Serum Three Months after
+                Non-Emergent Cardiac Surgery
+            }\\
+            \href{https://doi.org/10.3390/biomedicines10102364}
+            {Biomedicines 10, no. 10 (September 2022): 2364}.
+      }
+
+\resumeSubHeadingListSmallEnd
+
+\vspace{-20pt}
+
+\section{Conference Abstracts}
+\vspace{-3pt}
+
+\reusmeSubHeadingListSmallStart
+\item {
+            \emph{
+                174: LONGITUDINAL CHANGES OF NEURO-SPECIFIC SERUM PROTEINS IN COVID-19 PATIENTS
+            }\\
+            \href{https://doi.org/10.1097/01.ccm.0000807020.73561.ed}
+            {Society of Critical Care Medicine 51st Critical Care Congress, April 2022}.
+      }
+
+\item {
+            \emph{
+                181: PATTERNS OF URINARY BIOMARKERS OF IMMUNOLOGIC ACTIVATION AND SEPSIS IN PATIENTS WITH COVID-19
+            }\\
+            \href{https://doi.org/10.1097/01.ccm.0000807048.74105.59}
+            {Society of Critical Care Medicine 51st Critical Care Congress, April 2022}.
+      }
+
+\resumeSubHeadingListSmallEnd
+
+\vspace{-20pt}
+
+
+% ------------------------------------- SERVICE/LEADERSHIP -------------------------------
+
+\section{Service and Leadership}
+
+\reusmeSubHeadingListSmallStart
+\vspace{-3pt}
+\item {
+            Vice President, \emph{Drexel Computational Design}, March 2021 -- May 2023 \\
+            Project Manager, \emph{Drexel Computational Design}, May 2023 -- Present
+      }
+\item {
+            Member, \emph{Tau Beta Pi}, December 2021 -- Present
+      }
+\item {
+            Member, \emph{Drexel Society of Artificial Intelligence}, September 2022 -- Present
+      }
+\resumeSubHeadingListSmallEnd
+
+
+\end{document}
+
+% ----------------------------------------------------------------------------------------
+%                                    RESUME ENDS HERE
+% ========================================================================================
