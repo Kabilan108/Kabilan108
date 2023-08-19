@@ -22,6 +22,9 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 \input{glyphtounicode}
 
 
@@ -61,9 +64,6 @@
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
 
 
 % ------------------------------------ CUSTOM COMMANDS -----------------------------------
