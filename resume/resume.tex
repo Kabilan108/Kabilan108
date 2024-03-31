@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author : Tony Kabilan Okeke
+%
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}   
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{fontawesome5}
+\usepackage[utf8]{inputenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage[
+    hidelinks,
+    pdfinfo={
+        Title={Tony K Okeke - Resume},
+        Author={Tony Kabilan Okeke},
+        Keywords={resume, Tony Okeke, data science, machine learning, deep learning, NLP, bioinformatics, computational biology, spatial transcriptomic, single-cell RNA-seq}
+    }]{hyperref}
+
+%----------FONT OPTIONS----------
+\usepackage[sfdefault]{FiraSans}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingRow}[7]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \renewcommand{\arraystretch}{0.2}% Reduce the spacing between rows
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+      {\small#5} & {\small #6} \\
+      {\small#7} & \\
+    \end{tabular*}\vspace{-7pt}
+}
+% \newcommand{\resumeSubheadingRow}[7]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & \textbf{\small #2} \\
+%       {\small#3} & {\small #4} \\
+%       {\small#5} & {\small #6} \\
+%       {\small#7} & \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \href{https://kabilan108.com}{\LARGE \scshape Tony Kabilan Okeke} \\  
+    \vspace{1pt}
+    Philadelphia, PA \\ 
+    \vspace{1pt}
+    \href{mailto:tonykabilanokeke@gmail\.com}{\faEnvelope\  tonykabilanokeke@gmail\.com}
+    ~~
+    \href{https://linkedin.com/in//t-k-o}{\faLinkedin\ linkedin.com/in/t-k-o}
+    ~~
+    \href{https://github.com/Kabilan108}{\faGithub\ Kabilan108}
+    \vspace{-18pt}
+\end{center}
+
+
+  
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Bioinformatics Data Scientist} {}
+        {GSK \textbar{} Collegeville, PA} {Apr 2022 -- Sep 2022 \textbar{} Apr 2023 -- Sep 2023}
+    \resumeItemListStart
+        \resumeItem {
+            Developed data integration pipelines to enable joint analysis of internally generated spatial transcriptomics (10X Visium, GeoMx) data with public scRNA-seq datasets, providing novel biological insights.
+        }
+        \resumeItem {
+            Developed machine learning models to predict carcinogenicity-initiating events for target molecules using rat transcriptomics data and chemical structures. Identified compound subgroups using UMAP embeddings.
+        }
+        \resumeItem {
+            Built a web-based tool for performing statistical analysis and biomarker discovery on high-content imaging datasets using \emph{Dash} and \emph{Flask},  with \emph{Dask} to scale computations. Deployed on \emph{R Studio Connect}.
+        }
+        \resumeItem {
+            Trained and deployed machine learning models (Decision Trees, Random Forests, SVMs) to identify imaging biomarkers in safety toxicology studies.
+        }
+        \resumeItem {
+            Implemented deep learning models (Noise2Void, Cellpose) to improve the performance of \emph{CellProfiler} segmentation and feature extraction pipelines.
+        }
+    \resumeItemListEnd
+  
+    \resumeSubheading
+        {Computational Research Assistant}{}
+        {Penn Medicine \textbar{} Philadelphia, PA}{Mar 2021 -- Aug 2022}
+    \resumeItemListStart
+        % \resumeItem {
+        %     Spearheaded data analysis efforts resulting in four \href{https://scholar.google.com/citations?user=kPKT6SsAAAAJ}{peer-reviewed publications}, providing novel insights into COVID-19 immune response, including serum and urinary biomarkers, and neurological impacts.
+        % }
+        \resumeItem {
+            Developed Python and R scripts to automate data ingestion, quality control and analysis for ELISA and Next-Generation Sequencing (NGS) assays, resulting in a 4X speed up of existing workflows. Conducted differential methylation and pathway enrichment analyses on NGS datasets.
+        }
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-13pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{AbokiCode} \textbar{} Transformers, FastAPI, Telegram Bot API \textbar{} Hackathon Winner} {Sep 2023 -- Present}
+    \resumeItemListStart
+        \resumeItem {
+            Developed a Learning Management System to facilitate easy course delivery to students in low-income areas. Implemented a web app using Next.js to enable course instructors customize the interface for students.
+        }
+        \resumeItem {
+            Built LLM-based study assistant to aid students with questions related to course material. Utilized LlamaIndex to build retrieval augmented generation pipeline using ColBERT embeddings stored in MongoDB. Served assistant via FastAPI.
+        }
+    \resumeItemListEnd
+    \vspace{-15pt}
+
+    \resumeProjectHeading
+        {\textbf{Meddibia} \textbar{} Tensorflow, Flask, Flutter \textbar{} Hackathon Winner} {Mar 2023}
+    \resumeItemListStart
+        \resumeItem {
+            Developed a medical diagnostic tool with a Flask API serving a Flutter-based IOS app.
+        }
+        \resumeItem {
+            Fine-tuned neural networks (VGG16, EfficientNet) for skin lesion detection, achieving 70\% accuracy. Developed API endpoints that leverage GPT-3 to extract symptoms from user messages. Trained a Naive Bayes classifier to predict diseases given a list of symptoms with 80\% accuracy.
+        }
+    \resumeItemListEnd
+    \vspace{-15pt}
+
+    \resumeProjectHeading
+        {\textbf{ML for Predicting Gene Ontology Enrichment} \textbar{} Tensorflow, Flask, Flutter} {Sep 2022}
+    \resumeItemListStart
+        \resumeItem {
+            Developed an end-to-end pipeline for processing and analyzing over 11,000 RNA-seq datasets, leveraging high-memory GCP VMs to process datasets in batches.
+        }
+        \resumeItem{
+            Trained and optimized an autoencoder neural network to reconstruct log fold-change values and predict Gene Ontology (GO) enrichment using latent space features.
+        }
+    \resumeItemListEnd
+    \vspace{-15pt}
+
+    \resumeProjectHeading
+        {\textbf{Identification of Connectomic Biomarkers for Autism using ML} \textbar{} bctpy, scikit-learn} {Aug 2022}
+    \resumeItemListStart
+        \resumeItem {
+            Computed graph theory measures on structural connectomes from ASD patients and employed machine learning models (LASSO, SVM) for feature selection and diagnostic accuracy assessment.
+        }
+        \resumeItem {
+            Conducted a comprehensive study correlating connectomic biomarkers with clinical outcomes, utilizing data visualization tools to represent intricate relationships within the multimodal dataset.
+        }
+    \resumeItemListEnd
+    \vspace{-7pt}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheadingRow
+        {Drexel University} {Philadelphia, Pennsylvania}
+        {Master of Science in Biomedical Engineering} {Graduation: June 2024}
+        {Bachelor of Science in Biomedical Engineering} {GPA: 4.00}
+        {Concentrations: Biomedical informatics \& Neuroengineering}
+\resumeSubHeadingListEnd
+\vspace{-9pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{multicols}{2}
+    \begin{itemize}[leftmargin=0.1in, itemsep=-3pt, label={}]
+        \item\small {
+            \textbf{Programming:} {Python, R, C++, SQL, Js/Ts, Shell, MATLAB} \\
+        }
+        \item\small {
+            \textbf{Bioinformatics:} {Seurat, ScanPy, SquidPy, CellProfiler}
+        }
+    \end{itemize}
+    
+    \columnbreak
+    
+    \begin{itemize}[leftmargin=0.1in, itemsep=-3pt, label={}]
+        \item\small {
+            \textbf{Web:} {Flask, FastAPI, React.js, Next.js}
+        }
+        \item\small {
+            \textbf{AI/ML:} {PyTorch, TensorFlow, sklearn, WandB, LangChain}
+        }
+    \end{itemize}
+\end{multicols}
+ \vspace{-6pt}
+   
+%-----------INVOLVEMENT---------------
+\section{Clubs \& Organizations}
+\begin{itemize}[leftmargin=0.2in, itemsep=-4pt]
+    \item\small Vice President, \emph{Drexel Computational Design}, March 2021 -- Present
+    \item\small Member, \emph{Sigma Xi}, January 2024 -- Present
+    \item\small Member, \emph{Tau Beta Pi}, December 2021 -- Present
+\end{itemize}
+ 
+\end{document}
