@@ -31,10 +31,10 @@
 % argument to environment should match number of sites
 \begin{subheader}{1}
     % leave third argument empty to specify no hyperlink
-    \site{}{kabilan108.github.io}{https://kabilan108.github.io/}
-    \site{}{GitHub/kabilan108}{https://kabilan108.github.io/}
+    \site{}{kabilan108.com}{https://kabilan108.com}
+    \site{}{GitHub/kabilan108}{https://github.com/kabilan108}
     \site{}{Linkedin/kabilan108}{https://linkedin.com/in/kabilan108}
-    \bfsite{}{tonykabilanokeke@gmail.com}{mailto:tonykabilanokeke@gmail.com}
+    \site{}{tonykabilanokeke@gmail.com}{mailto:tonykabilanokeke@gmail.com}
     \site{}{Philadelphia, PA}{}\\
 \end{subheader}
 
@@ -42,11 +42,15 @@
 % EDUCATION
 %%%%%%%%%%%%
 \begin{topic}{Education}
-    % \entry{institution}{dates}{subtitle}{description}
+    \edentry{Drexel University, Philadelphia PA}{Sep 2022 - Jun 2024}
+    {M.S. in Biomedical Engineering \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad~~~~GPA: 3.99}
+    {\vspace{-10pt}{Concentrations in} Bioinformatics \& Bioimaging}
+\end{topic}
+
+\begin{topic}{Education}
     \edentry{Drexel University, Philadelphia PA}{Sep 2019 - Jun 2024}
-    {B.S. \& M.S. in Biomedical Engineering \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad~GPA: 4.00}
-    {\vspace{-10pt}{Concentrations:} Bioinformatics, Neuroengineering, Bioimaging}
-    %  Relevant Coursework: Bioinformatics, Applied Machine Learning, Deep Learning, Computational Neuroscience}
+    {B.S. in Biomedical Engineering \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad~~~~GPA: 3.99}
+    {\vspace{-10pt}{Concentration in} Neuroengineering}
 \end{topic}
 
 
@@ -56,13 +60,13 @@
 \begin{topic}{Skills}
     % \skillset{category}{members}
     \skillset{Programming}{
-        Python, R, Shell, C++, MATLAB, SQL, AWK, PHP, JavaScript
+        Python, R, Bash, C++, SQL, JS/TS, Kotlin
     }
-    \skillset{ML Frameworks}{
-        TensorFlow, PyTorch, HF Transformers, Scikit-learn, LangChain, LlamaIndex
+    \skillset{AI/ML}{
+        PyTorch, Transformers, Scikit-learn, Weights \& Biases
     }
-    \skillset{Tools \& Packages}{
-        Seurat, SquidPy, CellProfiler, FastAPI, Flask, React.js, Docker
+    \skillset{Frameworks \& Tools}{
+        FastAPI, Flask, React.js, Docker, Seurat, SquidPy, CellProfiler
     }
     \\
 \end{topic}
@@ -73,35 +77,55 @@
 %%%%%%%%%%%%%
 \begin{topic}{Experience}
     % \entry{role}{dates}{team/company}{description}
-    \entry{Data Scientist (Bioinformatics)}{Apr 2022 -  Sep 2022,~~Apr 2023 - Sep 2023}
+    \entry{Machine Learning Engineer}{Aug 2024 - Present}
+    {Moberg Analytics - Philadelphia PA}
+    {
+        \item Leading the development of state-of-the-art machine learning models for detecting and removing artifacts in high-resolution multimodal neuroimaging datasets in collaboration with clinicians and researchers.
+        \vspace{-5pt}
+
+        \item Architecting and deploying scalable machine learning pipelines in distributed cloud environments to enable real-time processing and analysis of continuous neuromonitoring data streams.
+        \vspace{-5pt}
+
+        \item Leading the development of the Autonomous Communications Medical Ecosystem (ACME), a DoD-funded passive sensor suite that leverages video, audio, and motion capture sensors to automatically document casualty care and generate tactical combat casualty care (TCCC) cards in austere military environments.
+        \vspace{-5pt}
+    }\\
+
+    \entry{Founder \& CEO}{Apr 2024 - Present}
+    {Meddibia - Philadelphia PA}
+    {
+        \item Developing an innovative electronic medical record (EMR) system for healthcare providers in developing countries, featuring multimodal AI capabilities to automate the digitization of historical medical records and offline-first architecture to address infrastructure challenges.
+        \vspace{-5pt}
+
+        \item Secured \$25,000 in initial funding through competitive startup programs; actively developing MVP in collaboration with Nigerian healthcare providers for first hospital deployment in Q1 2025.
+        \vspace{-5pt}
+    }\\
+
+    \entry{Data Scientist}{Apr 2023 - Sep 2023}
     {IVIVT Non-Clinical Safety, GSK - Collegeville PA}
     {
-    \item Enhanced spatial transcriptomics (10X Visium) data analysis by introducing advanced software and machine learning models to improve quality control, visualizations, cell type annotations and accurate quantification of gene expression across different tissue types.
-    \vspace{-5pt}
+        \item Enhanced spatial transcriptomics (10X Visium) data analysis by introducing advanced software and machine learning models to improve quality control, visualizations, cell type annotations and accurate quantification of gene expression across different tissue types.
+        \vspace{-5pt}
 
-    \item Facilitated the integration of internally generated spatial transcriptomics (ST) data with publicly availbale single-cell data to enable comprehensive analysis and interpretation of ST data in conjunction with broader cellular information.
-    \vspace{-5pt}
+        \item Collaborated with the HESI eSTAR carcinogenicity working group to develop a neural network model that predicts molecular initiating events associated with liver carcinogenicity, leveraging rat transcriptomics studies.
+        \vspace{-5pt}
 
-    \item Developed Python scripts to streamline the identification of off-target genes expressed in specific tissues by automating the import of tissue-specific gene expression data from public domains like NCBI and Bgee.
-    \vspace{-5pt}
+        \item Utilized UMAP and t-SNE clustering methods on a comprehensive ChEMBL dataset to group HESI compounds by global embeddings, and developed machine learning models for biomarker identification within each cluster to assess carcinogenicity, enabling more targeted and insightful evaluations.
+        \vspace{-5pt}
 
-    \item Collaborated with the HESI eSTAR carcinogenicity working group to develop a neural network model that predicts molecular initiating events associated with liver carcinogenicity, leveraging rat transcriptomics studies.
-    \vspace{-5pt}
+        \item Spearheaded the development of an interactive analytics and visualization platform for spatial transcriptomics data (GeoMx), supporting future acquisition plans and facilitating in-depth, interactive reporting.
+    }\\
 
-    \item Utilized UMAP and t-SNE clustering methods on a comprehensive ChEMBL dataset to group HESI compounds by global embeddings, and developed machine learning models for biomarker identification within each cluster to assess carcinogenicity, enabling more targeted and insightful evaluations.
-    \vspace{-5pt}
+    \entry{Data Scientist}{Apr 2022 -  Sep 2022}
+    {IVIVT Non-Clinical Safety, GSK - Collegeville PA}
+    {
+        \item Developed an interactive web-app for performing statistical analyses and biomarker discovery on high-content imaging datasets using \textit{Dash} and \textit{Flask}; scaled computations using \textit{Dask} and deployed on \textit{RStudio Connect}.
+        \vspace{-5pt}
 
-    \item Spearheaded the development of an interactive analytics and visualization platform for spatial transcriptomics data (GeoMx), supporting future acquisition plans and facilitating in-depth, interactive reporting.
-    \vspace{-5pt}
+        \item Implemented machine learning algorithms including Decision Trees, Random Forests, and SVM for biomarker discovery in high-content imaging datasets.
+        \vspace{-5pt}
 
-    \item Developed an interactive web-app for performing statistical analyses and biomarker discovery on high-content imaging datasets using \textit{Dash} and \textit{Flask}; scaled computations using \textit{Dask} and deployed on \textit{RStudio Connect}.
-    \vspace{-5pt}
-
-    \item Implemented machine learning algorithms including Decision Trees, Random Forests, and SVM for biomarker discovery in high-content imaging datasets.
-    \vspace{-5pt}
-
-    \item Implemented various deep learning models (Noise2Void, Cellpose) to improve the performance of Cell Profiler image segmentation and feature extraction pipelines.
-    \vspace{-5pt}
+        \item Implemented various deep learning models (Noise2Void, Cellpose) to improve the performance of Cell Profiler image segmentation and feature extraction pipelines.
+        \vspace{-5pt}
     }\\
 
     \entry{Computational Research Assistant}{Mar 2021 - Aug 2022}
@@ -133,10 +157,21 @@
 %%%%%%%%%%%
 \begin{topic}{Projects}
     % \entry{name}{dates}{tools used}{description}
-    \entry{Meddibia}{\emph{Python, TensorFlow, Flask, Flutter}}
+
+    \entry{WazobiaCode}{\emph{FastAPI, Next.js}}
+    {May 2024 - Sep 2024}
+    {
+        \item Organized a web development bootcamp for Nigerian high school students, teaching over 100 students the basics of web development and equipping them with the skills to build their own projects.
+        \vspace{-5pt}
+    
+        \item Built a custom learning management platform with automated student progress tracking and real-time communication features through Telegram bot integration, enhancing the delivery of synchronous online lessons.
+        \vspace{-5pt}
+    }\\
+
+    \entry{Meddibia MVP}{\emph{Python, TensorFlow, Flask, Flutter}}
     {Mar 2023}
     {
-        \item Pioneered a cross-functional team to win a \$5,000 prize at a hackathon, leveraging diverse skills to develop and deploy a medical diagnostic tool with a user-friendly mobile app interface.
+        \item Led a multidisciplinary team to win a \$5,000 prize at a hackathon, leveraging diverse skills to develop and deploy a medical diagnostic tool with a user-friendly mobile app interface.
         \vspace{-5pt}
     
         \item Engineered Python scripts for fine-tuning state-of-the-art neural networks like VGG16 and EfficientNet, achieving a 70\% classification accuracy for skin lesion analysis from Kaggle datasets using Google Colab for computation.
@@ -166,6 +201,7 @@
         \vspace{10pt}
     }
 \end{topic}
+\vspace{50pt}
 
 %%%%%%%%%%%%%%%
 % PUBLICATIONS
@@ -197,12 +233,31 @@
     }
     \\
 \end{topic}
+
+\begin{topic}{Under Review}
+    \edentry{}{}{}{
+    \vspace{-30pt}
+    \textbf{Tony K. Okeke}, Manil Shrestha, Ethan Moyer, Karen G. Hirsch, Teresa L. May, Zihuai He, Richard Moberg, Jonathan Elmer, 2024. \textit{Evaluating Artifact Detection Algorithms for the Arterial Blood Pressure Waveform Acquired from the Intensive Care Unit: A PRECICECAP Informatics Approach}. {Under review at IEEE Transactions on Biomedical Engineering.}
+    }
+    \\
+\end{topic}
+
 % \vspace{-10pt}
 
 %%%%%%%%%%%%%%%
 % CONFERENCE SUMBISSIONS
 %%%%%%%%%%%%%%%
-\begin{topic}{Abstracts}
+\begin{topic}{Conference Abstracts}
+    \edentry{}{}{}{
+    \vspace{-40pt}
+    Ethan Moyer, Gabriella Grym, \textbf{Tony K. Okeke}, Caroline Vitkovitsky, Ali Youssef, Edward Kim, Dmitriy Petrov, Dick Moberg. Case-Based Reasoning to Aid in Clinical Decision Support of TBI. Poster presented at NEBEC, Hoboken, NJ. April 2024.
+    }
+
+    \edentry{}{}{}{
+    \vspace{-40pt}
+    \textbf{Tony K. Okeke}, Ahmet Sacan. Utilizing Neural Network Autoencoders for Unsupervised Feature Learning from RNA-Seq Differential Expression Analysis Towards Gene Ontology Term Prediction. Poster presented at SOT Annual Meeting, Salt Lake City, UT. March 2024.
+    }
+
     \edentry{}{}{}{
     \vspace{-40pt}
     \textbf{Okeke, T.}, Siddiq, K., Restrepo, M., Tadikonda, P. and Laudanski, K., 2022. 181: PATTERNS OF URINARY BIOMARKERS OF IMMUNOLOGIC ACTIVATION AND SEPSIS IN PATIENTS WITH COVID-19. \href{https://doi.org/10.1097/01.ccm.0000807048.74105.59}{Critical Care Medicine, 50(1), p.74.}
@@ -218,22 +273,22 @@
 %%%%%%%%%
 % HONORS
 %%%%%%%%%
-\begin{topic}{Honors}
-    \honor{Drexel University Dean's List}{Fall 2019 - Present}
-    \honor{HESI GTTC Professional Development Award, \$1000}{Spring 2023}
-    \honor{Philly CodeFest Collaborative Team Award (Meddibia), \$5000}{Winter 2023}
+\begin{topic}{Honors \& Awards}
+    \honor{Drexel University Dean's List}{Sep 2019 - Jun 2024}
+    \honor{Drexel Startups Fund - \$20,000 for Meddibia}{May 2024}
+    \honor{Drexel Baiada Institute Innovation Tournament - \$5000 for WazobiaCode}{Feb 2024}
+    \honor{HESI GTTC Professional Development Award - \$1000}{Sep 2023}
+    \honor{Philly CodeFest Collaborative Team Award (Meddibia) - \$5000}{Apr 2023}
 \end{topic}
 \vspace{5pt}
 
 %%%%%%%%%
 % SERVICE
 %%%%%%%%%
-\begin{topic}{Service \& Leadership}
-    % \honor{award}{date/location}
-    \honor{Drexel Computational Design, Vice President \& Cofounder}{Mar 2021 - Present}
-    \honor{Drexel Society of AI, Member}{Sep 2022 - Present}
-    \honor{Mid-Atlantic SOT, Member}{Oct 2023 - Present}
-    \honor{Tau Beta Pi, Member}{Dec 2021 - Present}
+\begin{topic}{Organizations}
+    \honor{Tau Beta Pi - Member}{Dec 2021 - Present}
+    \honor{Mid-Atlantic Society of Toxicology - Member}{Oct 2023 - Present}
+    \honor{Drexel Computational Design - Vice President \& Cofounder}{Mar 2021 - Mar 2024}
 \end{topic}
 
 \end{document}
