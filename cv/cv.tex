@@ -1,294 +1,133 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% resume - one page, one column
-% XeLaTeX Template
-% Version 1.1 (09.05.2017)
-%
-% Author: knyte (https://github.com/knyte)
-%
-% Repository: https://github.com/knyte/resume
-%
-% This template is primarily designed for
-% undergraduate EE/CE/CS students applying for
-% industry roles in software engineering
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\documentclass[]{resume-knyte}
- 
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{fontspec,enumitem,titlesec,fancyhdr}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\setlength{\emergencystretch}{3em}
+\setmainfont[Path=resources/fonts/PT_Sans/,BoldFont=PT_Sans-Web-Bold,ItalicFont=PT_Sans-Web-Italic,BoldItalicFont=PT_Sans-Web-BoldItalic]{PT_Sans-Web-Regular}
+\setsansfont[Path=resources/fonts/Muli/,BoldFont=Muli-Bold]{Muli-Regular}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=15pt,itemsep=3pt,topsep=3pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=18pt,itemsep=9pt,topsep=5pt,parsep=0pt}
+\titleformat{\section}{\large\sffamily\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{7pt}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small Tony Kabilan Okeke}\fancyfoot[R]{\small\thepage}
+\newcommand{\role}[3]{\textbf{#1}\hfill #2\\\textit{#3}\par}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\nolinkurl{doi:#1}}}
 \begin{document}
+{\centering {\LARGE\sffamily\bfseries Tony Kabilan Okeke}\par
+\href{mailto:tonykabilanokeke@gmail.com}{tonykabilanokeke@gmail.com} $\cdot$ Philadelphia, PA\\
+\href{https://kabilan108.com}{kabilan108.com} $\cdot$ \href{https://github.com/kabilan108}{GitHub: kabilan108} $\cdot$ \href{https://scholar.google.com/citations?user=kPKT6SsAAAAJ}{Google Scholar} $\cdot$ \href{https://orcid.org/0000-0002-4829-7726}{ORCID: 0000-0002-4829-7726}\par}
 
-%%%%%%%%%
-% HEADER
-%%%%%%%%%
+\section{Education}
+\textbf{Drexel University}, Philadelphia, PA\hfill Sep 2019 -- Jun 2024\\
+M.S., Biomedical Engineering, 2024. Concentrations: Bioinformatics and Bioimaging. GPA: 3.99/4.00.\\
+B.S., Biomedical Engineering, 2024. Concentration: Neuroengineering. GPA: 3.99/4.00.
 
-% \makeheader{title/name}
-\makeheader{Tony Kabilan Okeke}
+\section{Research and engineering experience}
+\role{Machine Learning Engineer}{Aug 2024 -- Present}{Moberg Analytics, Philadelphia, PA}
+\begin{itemize}
+\item Led model development, experiments, cross-validation, testing, manuscript drafting, and peer-review revisions for a first-author PRECICECAP study on arterial blood pressure artifact detection, published in \textit{Biomedical Signal Processing and Control}. Released ABP and related ECG artifact-detection models and inference code through OkekeClean.
+\item Implemented density spectral array (DSA) processing for ELECTRO-BOOST, an ancillary study to BOOST-3. Processed over 1,200 EEG recordings from over 200 patients; 10 clinicians use the DSA alongside raw EEG in the study's change-point review workflow.
+\item Built offline and on-demand DSA pipelines that preserve causal filter behavior when processing arbitrary recording segments. The feature is available at at least three hospitals in the US and Europe, in addition to the study environment.
+\item Developed a custom EDF parser after benchmarking existing libraries against memory and loading-time requirements. It supports access to over 1,100 EEG files in ELECTRO-BOOST's shared review platform.
+\item Developed Moberg's ACME mobile application and sensor integrations for the US Army TATRC AutoDoc program, funded through MTEC. Rebuilt a React Native prototype in native Kotlin to support concurrent Bluetooth sensor streams and device SDKs. Assembled five kits; delivered four for TATRC evaluation and retained one internally.
+\item Own EEG paging and data-loading improvements for continuous playback in a cloud environment. Support customer deployments, diagnose failures, and deliver hotfixes; contribute requirements and QMS documentation toward a planned 510(k) submission.
+\item Built an early CLARA AI prototype for Moberg's successful Ben Franklin Technology Partners funding pitch and participated in technical Q\&A. Currently developing a research-agent demonstration for an upcoming NCS informatics workshop.
+\end{itemize}
 
-%%%%%%%%%%%%
-% SUBHEADER
-%%%%%%%%%%%%
+\role{Data Scientist}{Apr -- Sep 2023}{IVIVT Non-Clinical Safety, GSK, Collegeville, PA}
+\begin{itemize}
+\item Developed quality-control, visualization, and cell-type annotation workflows for 10X Visium spatial transcriptomics; built an interactive GeoMx analysis platform.
+\item Worked with the HESI eSTAR carcinogenicity group on neural-network models of molecular initiating events using rat transcriptomics data, and explored compound embeddings and biomarker models using ChEMBL data.
+\end{itemize}
 
-% argument to environment should match number of sites
-\begin{subheader}{1}
-    % leave third argument empty to specify no hyperlink
-    \site{}{kabilan108.com}{https://kabilan108.com}
-    \site{}{GitHub/kabilan108}{https://github.com/kabilan108}
-    \site{}{Linkedin/kabilan108}{https://linkedin.com/in/kabilan108}
-    \site{}{tonykabilanokeke@gmail.com}{mailto:tonykabilanokeke@gmail.com}
-    \site{}{Philadelphia, PA}{}\\
-\end{subheader}
+\newpage
+\section{Research and engineering experience, continued}
+\role{Data Scientist}{Apr -- Sep 2022}{IVIVT Non-Clinical Safety, GSK, Collegeville, PA}
+\begin{itemize}
+\item Built a Dash/Flask application for statistical analysis and biomarker discovery in high-content imaging data; used Dask for computation and deployed through RStudio Connect.
+\item Implemented decision-tree, random-forest, and SVM models for biomarker discovery, and integrated Noise2Void and Cellpose into image-processing workflows.
+\end{itemize}
+\role{Computational Research Assistant}{Mar 2021 -- Aug 2022}{Invenio Lab, Penn Medicine, Philadelphia, PA}
+\begin{itemize}
+\item Analyzed longitudinal serum and urinary biomarkers in COVID-19 and cardiac-surgery cohorts, contributing to publications on immune activation, neuroinjury, and complement pathways.
+\item Developed Python and R workflows for ELISA and sequencing data ingestion, quality control, and analysis, including differential methylation and pathway enrichment.
+\end{itemize}
+\role{Research Assistant}{May 2020 -- Jun 2021}{Zhou Lab, Children's Hospital of Philadelphia, Philadelphia, PA}
+\begin{itemize}
+\item Contributed to SeSAMe, an R package for Infinium DNA methylation analysis, and developed tests against public Gene Expression Omnibus datasets.
+\end{itemize}
 
-%%%%%%%%%%%%
-% EDUCATION
-%%%%%%%%%%%%
-\begin{topic}{Education}
-    \edentry{Drexel University, Philadelphia PA}{Sep 2022 - Jun 2024}
-    {M.S. in Biomedical Engineering \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad~~~~GPA: 3.99}
-    {\vspace{-10pt}{Concentrations in} Bioinformatics \& Bioimaging}
-\end{topic}
+\section{Selected projects}
+\role{OkekeClean}{2026}{Python; physiological waveform artifact detection}
+\begin{itemize}
+\item Released ABP and ECG model weights with inference code and documentation. \href{https://github.com/moberg-analytics/oss-models}{Source code}; \href{https://huggingface.co/moberg-analytics/okekeclean-abp}{ABP model}; \href{https://huggingface.co/moberg-analytics/okekeclean-ecg}{ECG model}.
+\end{itemize}
+\role{Meddibia}{2023 -- 2024}{Team hackathon and prototype project}
+\begin{itemize}
+\item Built an AI health-assistant prototype for Philly Codefest 2023 and later explored medical-record digitization through customer discovery and an EMR prototype. The project did not reach customer deployment; prototype work ended in December 2024.
+\end{itemize}
+\role{WazobiaCode}{May -- Sep 2024}{FastAPI, Next.js; education project}
+\begin{itemize}
+\item Organized a web-development bootcamp for over 100 Nigerian high-school students and built a learning platform with progress tracking and Telegram integration.
+\end{itemize}
+\role{MLGO: Gene Ontology enrichment prediction}{2022 -- 2024}{Python, R, PyTorch, limma}
+\begin{itemize}
+\item Built a preprocessing and differential-expression pipeline for over 11,000 RNA-seq datasets from DEE2. Trained autoencoders and explored learned representations for Gene Ontology term prediction; presented at the 2024 Society of Toxicology meeting.
+\end{itemize}
 
-\begin{topic}{Education}
-    \edentry{Drexel University, Philadelphia PA}{Sep 2019 - Jun 2024}
-    {B.S. in Biomedical Engineering \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad~~~~GPA: 3.99}
-    {\vspace{-10pt}{Concentration in} Neuroengineering}
-\end{topic}
+\newpage
+\section{Peer-reviewed journal articles}
+\begin{enumerate}
+\item \textbf{Okeke, T. K.}, Shrestha, M., Moyer, E., Hirsch, K. G., May, T. L., He, Z., Tam, J., Faiver, L., Moberg, R., and Elmer, J. (2026). Evaluating artifact detection algorithms for the arterial blood pressure waveform acquired from the intensive care unit: A PRECICECAP informatics approach. \textit{Biomedical Signal Processing and Control}, 124, 110434. \doi{10.1016/j.bspc.2026.110434}.
+\item Laudanski, K., Liu, D., \textbf{Okeke, T.}, Restrepo, M., and Szeto, W. Y. (2022). Persistent Depletion of Neuroprotective Factors Accompanies Neuroinflammatory, Neurodegenerative, and Vascular Remodeling Spectra in Serum Three Months after Non-Emergent Cardiac Surgery. \textit{Biomedicines}, 10(10), 2364. \doi{10.3390/biomedicines10102364}.
+\item Laudanski, K., Liu, D., Gullipalli, D., Song, W. C., \textbf{Okeke, T.}, and Szeto, W. Y. (2022). A decline of protective apolipoprotein J and complement factor H concomitant with increase in C5a 3 months after cardiac surgery---Evidence of long-term complement perturbations. \textit{Frontiers in Cardiovascular Medicine}, 9, 983617. \doi{10.3389/fcvm.2022.983617}.
+\item Laudanski, K., \textbf{Okeke, T.}, Siddiq, K., Hajj, J., Restrepo, M., Gullipalli, D., and Song, W. C. (2022). A disturbed balance between blood complement protective factors (FH, ApoE) and common pathway effectors (C5a, TCC) in acute COVID-19 and during convalesce. \textit{Scientific Reports}, 12, 13658. \doi{10.1038/s41598-022-17011-7}.
+\item Laudanski, K., Hajj, J., Restrepo, M., Siddiq, K., \textbf{Okeke, T.}, and Rader, D. J. (2021). Dynamic Changes in Central and Peripheral Neuro-Injury vs. Neuroprotective Serum Markers in COVID-19 Are Modulated by Different Types of Anti-Viral Treatments but Do Not Affect the Incidence of Late and Early Strokes. \textit{Biomedicines}, 9(12), 1791. \doi{10.3390/biomedicines9121791}.
+\item Laudanski, K., \textbf{Okeke, T.}, Hajj, J., Siddiq, K., Rader, D. J., Wu, J., and Susztak, K. (2021). Longitudinal urinary biomarkers of immunological activation in covid-19 patients without clinically apparent kidney disease versus acute and chronic failure. \textit{Scientific Reports}, 11, 19675. \doi{10.1038/s41598-021-99102-5}.
+\item Laudanski, K., Hajj, J., Antalosky, B., Ghani, D., Phan, U., Hernandez, R., \textbf{Okeke, T.}, Wu, J., Rader, D., and Susztak, K. (2021). Unbiased Analysis of Temporal Changes in Immune Serum Markers in Acute COVID-19 Infection With Emphasis on Organ Failure, Anti-Viral Treatment, and Demographic Characteristics. \textit{Frontiers in Immunology}, 12, 650465. \doi{10.3389/fimmu.2021.650465}.
+\end{enumerate}
+
+\section{Journal peer review}
+\textit{Biomedical Signal Processing and Control}, Elsevier, 2025 -- present.\\
+Four completed review assignments across three manuscripts, including one re-review; one additional manuscript review in progress. Completed reviews recorded on \href{https://orcid.org/0000-0002-4829-7726}{ORCID}.
+
+\section{Technical skills}
+\textbf{Languages:} Python, R, Bash, C++, SQL, JavaScript/TypeScript, Kotlin.\\
+\textbf{Machine learning:} PyTorch, Transformers, scikit-learn, Weights \& Biases.\\
+\textbf{Software and analysis:} FastAPI, Flask, React, Android, Bluetooth sensor integration, Docker, physiological signal processing, Seurat, SquidPy, CellProfiler.
 
 
-%%%%%%%%%
-% SKILLS
-%%%%%%%%%
-\begin{topic}{Skills}
-    % \skillset{category}{members}
-    \skillset{Programming}{
-        Python, R, Bash, C++, SQL, JS/TS, Kotlin
-    }
-    \skillset{AI/ML}{
-        PyTorch, Transformers, Scikit-learn, Weights \& Biases
-    }
-    \skillset{Frameworks \& Tools}{
-        FastAPI, Flask, React.js, Docker, Seurat, SquidPy, CellProfiler
-    }
-    \\
-\end{topic}
-\vspace{-5pt}
+\newpage
+\section{Conference abstracts and presentations}
+\begin{itemize}
+\item \textbf{Okeke, T. K.}, et al. (2026). Spectrogram-Based Transfer Learning for Electrocardiogram (ECG) Artifact Detection in the ICU. \textit{Critical Care Medicine}, 54(3S), abstract 1599. \doi{10.1097/01.ccm.0001188392.79833.43}. Presented at SCCM Research Snapshot Theater, Chicago, March 24.
+\item \textbf{Okeke, T. K.}, et al. (2025). Transfer Learning for Artifact Detection in ICU-Collected Arterial Blood Pressure Waveforms. Neurocritical Care Society Annual Meeting, Montreal, September 19. Selected for Distinguished Professor Rounds; presented by coauthor Ethan Moyer.
+\item \textbf{Okeke, T. K.}, et al. (2025). Development of the Autonomous Communications Medical Ecosystem (ACME): A Multimodal Sensor Suite for Passive Data Collection During Combat Casualty Care. Poster MHSRS-25-15162, Military Health System Research Symposium, Kissimmee, FL, August 5. Presenting author.
+\item Moyer, E., Grym, G., \textbf{Okeke, T. K.}, Vitkovitsky, C., Youssef, A., Kim, E., Petrov, D., and Moberg, D. (2024). Case-Based Reasoning to Aid in Clinical Decision Support of TBI. Poster, IEEE Northeast Bioengineering Conference, Hoboken, NJ, April.
+\item \textbf{Okeke, T. K.}, and Sacan, A. (2024). Utilizing Neural Network Autoencoders for Unsupervised Feature Learning from RNA-Seq Differential Expression Analysis Towards Gene Ontology Term Prediction. Poster, Society of Toxicology Annual Meeting, Salt Lake City, UT, March.
+\item \textbf{Okeke, T.}, Siddiq, K., Restrepo, M., Tadikonda, P., and Laudanski, K. (2022). Patterns of Urinary Biomarkers of Immunologic Activation and Sepsis in Patients With COVID-19. \textit{Critical Care Medicine}, 50(1), 74, abstract 181. \doi{10.1097/01.ccm.0000807048.74105.59}.
+\item Restrepo, M., \textbf{Okeke, T.}, Siddiq, K., Tadikonda, P., and Laudanski, K. (2022). Longitudinal Changes of Neuro-Specific Serum Proteins in COVID-19 Patients. \textit{Critical Care Medicine}, 50(1), 71, abstract 174. \doi{10.1097/01.ccm.0000807020.73561.ed}.
+\end{itemize}
 
-%%%%%%%%%%%%%
-% EXPERIENCE
-%%%%%%%%%%%%%
-\begin{topic}{Experience}
-    % \entry{role}{dates}{team/company}{description}
-    \entry{Machine Learning Engineer}{Aug 2024 - Present}
-    {Moberg Analytics - Philadelphia PA}
-    {
-        \item Leading the development of state-of-the-art machine learning models for detecting and removing artifacts in high-resolution multimodal neuroimaging datasets in collaboration with clinicians and researchers.
-        \vspace{-5pt}
+\section{Upcoming workshop}
+Primary workshop director and presenter, \href{https://ncs2026.conference-program.com/presentation/?id=WSHP116&sess=sess125}{The 2026 Informatics, Big Data, and AI Workshop}, Neurocritical Care Society Annual Meeting, October 20, 2026. With Brandon Foreman, Eric Rosenthal, and Morteza Zabihi.
 
-        \item Architecting and deploying scalable machine learning pipelines in distributed cloud environments to enable real-time processing and analysis of continuous neuromonitoring data streams.
-        \vspace{-5pt}
+\section{Honors and awards}
+\begin{itemize}[itemsep=2pt]
+\item UEV Venture Building Weekend, winning team, Xploit, March 2026.
+\item Foundry Startup in a Weekend, New Idea prize, Xploit, November 2025. Team award: \$1,550.
+\item Drexel Startups Fund, Meddibia, June 2024. Team project award: \$20,000.
+\item Baiada Institute Innovation Tournament, Aboki Learn, February 2024. Team award: \$5,000.
+\item HESI GTTC Professional Development Award, Spring 2023. Individual award: \$1,000.
+\item Philly Codefest Collaborative Team Award, Meddibia, March 2023. Team award: \$5,000.
+\item Drexel University Dean's List, 2019 -- 2024.
+\end{itemize}
 
-        \item Leading the development of the Autonomous Communications Medical Ecosystem (ACME), a DoD-funded passive sensor suite that leverages video, audio, and motion capture sensors to automatically document casualty care and generate tactical combat casualty care (TCCC) cards in austere military environments.
-        \vspace{-5pt}
-    }\\
-
-    \entry{Founder \& CEO}{Apr 2024 - Present}
-    {Meddibia - Philadelphia PA}
-    {
-        \item Developing an innovative electronic medical record (EMR) system for healthcare providers in developing countries, featuring multimodal AI capabilities to automate the digitization of historical medical records and offline-first architecture to address infrastructure challenges.
-        \vspace{-5pt}
-
-        \item Secured \$25,000 in initial funding through competitive startup programs; actively developing MVP in collaboration with Nigerian healthcare providers for first hospital deployment in Q1 2025.
-        \vspace{-5pt}
-    }\\
-
-    \entry{Data Scientist}{Apr 2023 - Sep 2023}
-    {IVIVT Non-Clinical Safety, GSK - Collegeville PA}
-    {
-        \item Enhanced spatial transcriptomics (10X Visium) data analysis by introducing advanced software and machine learning models to improve quality control, visualizations, cell type annotations and accurate quantification of gene expression across different tissue types.
-        \vspace{-5pt}
-
-        \item Collaborated with the HESI eSTAR carcinogenicity working group to develop a neural network model that predicts molecular initiating events associated with liver carcinogenicity, leveraging rat transcriptomics studies.
-        \vspace{-5pt}
-
-        \item Utilized UMAP and t-SNE clustering methods on a comprehensive ChEMBL dataset to group HESI compounds by global embeddings, and developed machine learning models for biomarker identification within each cluster to assess carcinogenicity, enabling more targeted and insightful evaluations.
-        \vspace{-5pt}
-
-        \item Spearheaded the development of an interactive analytics and visualization platform for spatial transcriptomics data (GeoMx), supporting future acquisition plans and facilitating in-depth, interactive reporting.
-    }\\
-
-    \entry{Data Scientist}{Apr 2022 -  Sep 2022}
-    {IVIVT Non-Clinical Safety, GSK - Collegeville PA}
-    {
-        \item Developed an interactive web-app for performing statistical analyses and biomarker discovery on high-content imaging datasets using \textit{Dash} and \textit{Flask}; scaled computations using \textit{Dask} and deployed on \textit{RStudio Connect}.
-        \vspace{-5pt}
-
-        \item Implemented machine learning algorithms including Decision Trees, Random Forests, and SVM for biomarker discovery in high-content imaging datasets.
-        \vspace{-5pt}
-
-        \item Implemented various deep learning models (Noise2Void, Cellpose) to improve the performance of Cell Profiler image segmentation and feature extraction pipelines.
-        \vspace{-5pt}
-    }\\
-
-    \entry{Computational Research Assistant}{Mar 2021 - Aug 2022}
-    {Invenio Lab, Penn Medicine - Philadelphia PA}
-    {
-        \item Led rigorous analytical efforts resulting in four peer-reviewed publications, focusing on the immune response in COVID-19 patients, including comprehensive studies on serum markers, urinary biomarkers, and neurological impacts.
-        \vspace{-5pt}
-
-        \item Conducted extensive data analysis to unveil temporal changes in serum markers related to organ failure and anti-viral treatments, contributing to a deeper understanding of COVID-19 progression and patient management strategies.
-        \vspace{-5pt}
-    
-        \item Developed Python and R scripts to automate ingestion, quality control, and analysis of data generated from ELISA and Next Generation Sequencing assays; performed differential methylation and pathway enrichment analyses on NGS data sets.
-        \vspace{-5pt}
-    }\\
-
-    \entry{Research Assistant}{May 2020 - Jun 2021}
-    {Zhou Lab, Children's Hospital of Philadelphia - Philadelphia PA}
-    {
-        \item Contributed to the development of the `SeSAMe` package which provides utilities to support the analysis of Infinium DNA methylation data sets.
-        \vspace{-5pt}
-
-        \item Developed tests to validate package functionalites against publicly available datasets from the Gene Expression Omnibus (GEO).
-        \vspace{-5pt}
-    }\\
-\end{topic}
-
-%%%%%%%%%%%
-% PROJECTS
-%%%%%%%%%%%
-\begin{topic}{Projects}
-    % \entry{name}{dates}{tools used}{description}
-
-    \entry{WazobiaCode}{\emph{FastAPI, Next.js}}
-    {May 2024 - Sep 2024}
-    {
-        \item Organized a web development bootcamp for Nigerian high school students, teaching over 100 students the basics of web development and equipping them with the skills to build their own projects.
-        \vspace{-5pt}
-    
-        \item Built a custom learning management platform with automated student progress tracking and real-time communication features through Telegram bot integration, enhancing the delivery of synchronous online lessons.
-        \vspace{-5pt}
-    }\\
-
-    \entry{Meddibia MVP}{\emph{Python, TensorFlow, Flask, Flutter}}
-    {Mar 2023}
-    {
-        \item Led a multidisciplinary team to win a \$5,000 prize at a hackathon, leveraging diverse skills to develop and deploy a medical diagnostic tool with a user-friendly mobile app interface.
-        \vspace{-5pt}
-    
-        \item Engineered Python scripts for fine-tuning state-of-the-art neural networks like VGG16 and EfficientNet, achieving a 70\% classification accuracy for skin lesion analysis from Kaggle datasets using Google Colab for computation.
-        \vspace{-5pt}
-    
-        \item Integrated GPT-3 for natural language processing to distill symptoms from patient descriptions, coupled with a Naive Bayes  classifier for disease prediction, and encapsulated the ML pipeline within a Flask API for real-time mobile app queries.
-        \vspace{-5pt}
-    }\\
-
-    \entry{MLGO: Machine Learning for Predicting GO Enrichment}{\emph{Python, R, PyTorch, limma}}
-    {Sep 2022}
-    {
-        \item Orchestrated an end-to-end R pipeline for preprocessing and differential expression analysis of over 11,000 RNA sequencing datasets from DEE2, leveraging Google Cloud VMs for high-compute capacity.
-        \vspace{-5pt}
-
-        \item Developed and tuned an autoencoder neural network to reconstruct log fold-change values from the datasets, explored latent space with PCA, UMAP, and t-SNE, and predicted Gene Ontology (GO) enrichment, utilizing tools such as TensorBoard and Keras Tuner for optimization.
-        \vspace{-5pt}
-    }\\
-
-    \entry{Identification of Connectomic Biomarkers for Autism using Machine Learning}{\emph{Python, sklearn, bctpy}}
-    {Aug 2022}
-    {
-        \item Developed Python scripts to compute a collection of graph theory measures on a dataset of structural connectomes from patients with Autism Spectrum Disorder (ASD); Employed machine learning models (LASSO regression, Support Vector Machine) for feature selection and diagnostic accuracy assessment.
-        \vspace{-15pt}
-
-        \item Executed a comprehensive study correlating connectomic biomarkers with clinical outcomes such as autism severity, social communication, and intelligence, utilizing data visualization tools to represent the intricate relationships within a multimodal neuroimaging dataset.
-        \vspace{10pt}
-    }
-\end{topic}
-\vspace{50pt}
-
-%%%%%%%%%%%%%%%
-% PUBLICATIONS
-%%%%%%%%%%%%%%%
-\begin{topic}{Publications}
-    \edentry{}{}{}{
-    \vspace{-35pt}
-    Laudanski, K., Liu, D., \textbf{Okeke, T.}, Restrepo, M. and Szeto, W.Y., 2022. \textit{Persistent Depletion of Neuroprotective Factors Accompanies Neuroinflammatory, Neurodegenerative, and Vascular Remodeling Spectra in Serum Three Months after Non-Emergent Cardiac Surgery}. \href{https://doi.org/10.3390/biomedicines10102364}{Biomedicines 10.10 (2022): 2364}.
-    }
-
-    \edentry{}{}{}{
-    \vspace{-30pt}
-    Laudanski, K., \textbf{Okeke, T.}, Siddiq, K., Hajj, J., Restrepo, M., Gullipalli, D. and Song, W.C., 2022. \textit{A disturbed balance between blood complement protective factors (FH, ApoE) and common pathway effectors (C5a, TCC) in acute COVID-19 and during convalesce.} \href{https://doi.org/10.1038/s41598-022-17011-7}{Scientific Reports 12.1 (2022): 13658.}
-    }
-
-    \edentry{}{}{}{
-    \vspace{-30pt}
-    Laudanski, K., \textbf{Okeke, T.}, Hajj, J., Siddiq, K., Rader, D.J., Wu, J. and Susztak, K., 2021. \textit{Longitudinal urinary biomarkers of immunological activation in covid-19 patients without clinically apparent kidney disease versus acute and chronic failure.} \href{https://www.nature.com/articles/s41598-021-99102-5.pdf?proof=tr}{Scientific Reports, 11(1), p.19675.}
-    }
-
-    \edentry{}{}{}{
-    \vspace{-30pt}
-    Laudanski, K., Hajj, J., Restrepo, M., Siddiq, K., \textbf{Okeke, T.} and Rader, D.J., 2021. \textit{Dynamic changes in central and peripheral neuro-injury vs. Neuroprotective serum markers in COVID-19 are modulated by different types of anti-viral treatments but do not affect the incidence of late and early strokes.} \href{https://doi.org/10.3390/biomedicines9121791}{Biomedicines 9.12 (2021): 1791.}
-    }
-
-    \edentry{}{}{}{
-    \vspace{-30pt}
-    Laudanski, K., Jihane, H., Antalosky, B., Ghani, D., Phan, U., Hernandez, R., \textbf{Okeke, T.}, Wu, J., Rader, D. and Susztak, K., 2021. \textit{Unbiased analysis of temporal changes in immune serum markers in acute COVID-19 infection with emphasis on organ failure, anti-viral treatment, and demographic characteristics.} \href{https://www.frontiersin.org/articles/10.3389/fimmu.2021.650465/full}{Frontiers in Immunology, 12, p.650465.}
-    }
-    \\
-\end{topic}
-
-\begin{topic}{Under Review}
-    \edentry{}{}{}{
-    \vspace{-30pt}
-    \textbf{Tony K. Okeke}, Manil Shrestha, Ethan Moyer, Karen G. Hirsch, Teresa L. May, Zihuai He, Richard Moberg, Jonathan Elmer, 2024. \textit{Evaluating Artifact Detection Algorithms for the Arterial Blood Pressure Waveform Acquired from the Intensive Care Unit: A PRECICECAP Informatics Approach}. {Under review at IEEE Transactions on Biomedical Engineering.}
-    }
-    \\
-\end{topic}
-
-% \vspace{-10pt}
-
-%%%%%%%%%%%%%%%
-% CONFERENCE SUMBISSIONS
-%%%%%%%%%%%%%%%
-\begin{topic}{Conference Abstracts}
-    \edentry{}{}{}{
-    \vspace{-40pt}
-    Ethan Moyer, Gabriella Grym, \textbf{Tony K. Okeke}, Caroline Vitkovitsky, Ali Youssef, Edward Kim, Dmitriy Petrov, Dick Moberg. Case-Based Reasoning to Aid in Clinical Decision Support of TBI. Poster presented at NEBEC, Hoboken, NJ. April 2024.
-    }
-
-    \edentry{}{}{}{
-    \vspace{-40pt}
-    \textbf{Tony K. Okeke}, Ahmet Sacan. Utilizing Neural Network Autoencoders for Unsupervised Feature Learning from RNA-Seq Differential Expression Analysis Towards Gene Ontology Term Prediction. Poster presented at SOT Annual Meeting, Salt Lake City, UT. March 2024.
-    }
-
-    \edentry{}{}{}{
-    \vspace{-40pt}
-    \textbf{Okeke, T.}, Siddiq, K., Restrepo, M., Tadikonda, P. and Laudanski, K., 2022. 181: PATTERNS OF URINARY BIOMARKERS OF IMMUNOLOGIC ACTIVATION AND SEPSIS IN PATIENTS WITH COVID-19. \href{https://doi.org/10.1097/01.ccm.0000807048.74105.59}{Critical Care Medicine, 50(1), p.74.}
-    }
-
-    \edentry{}{}{}{
-    \vspace{-60pt}
-    Restrepo, M., \textbf{Okeke, T.}, Siddiq, K., Tadikonda, P. and Laudanski, K., 2022. 174: LONGITUDINAL CHANGES OF NEURO-SPECIFIC SERUM PROTEINS IN COVID-19 PATIENTS. \href{https://doi.org/10.1097/01.ccm.0000807020.73561.ed}{Critical Care Medicine, 50(1), p.71.}
-    }
-\end{topic}
-\vspace{-20pt}
-
-%%%%%%%%%
-% HONORS
-%%%%%%%%%
-\begin{topic}{Honors \& Awards}
-    \honor{Drexel University Dean's List}{Sep 2019 - Jun 2024}
-    \honor{Drexel Startups Fund - \$20,000 for Meddibia}{May 2024}
-    \honor{Drexel Baiada Institute Innovation Tournament - \$5000 for WazobiaCode}{Feb 2024}
-    \honor{HESI GTTC Professional Development Award - \$1000}{Sep 2023}
-    \honor{Philly CodeFest Collaborative Team Award (Meddibia) - \$5000}{Apr 2023}
-\end{topic}
-\vspace{5pt}
-
-%%%%%%%%%
-% SERVICE
-%%%%%%%%%
-\begin{topic}{Organizations}
-    \honor{Tau Beta Pi - Member}{Dec 2021 - Present}
-    \honor{Mid-Atlantic Society of Toxicology - Member}{Oct 2023 - Present}
-    \honor{Drexel Computational Design - Vice President \& Cofounder}{Mar 2021 - Mar 2024}
-\end{topic}
-
+\section{Leadership}
+Vice President and Cofounder, Drexel Computational Design, March 2021 -- March 2024.
 \end{document}
